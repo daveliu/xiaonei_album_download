@@ -1,0 +1,7 @@
+A little rails app for some friends use,  download the xiaonei.com's album to a zip file.
+
+use gem:
+require 'mechanize'
+require 'hpricot'  
+require 'zip/zip'
+require 'zip/zipfilesystem'  
