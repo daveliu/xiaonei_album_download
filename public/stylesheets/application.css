@@ -1,0 +1,200 @@
+body{background-color:#FEFEFE;  /*background:#D6E59B url("/images/bg.jpg") repeat scroll 0 0; */color:#000; margin:0px; padding:0pt; font-family:Arial,Helvetica,sans-serif; font-size:0.8em}
+#main{
+	background:#FFFFFF none repeat scroll 0 0;
+	border:13px solid #CDDCEC;
+	margin:13px auto 0;
+	width:718px;
+	height:550px;
+}              
+#header{
+	background:#FFFFFF none repeat scroll 0 0;
+	border : 1px solid #ccc;
+	background-color:#DFE4EE;
+  border:1px solid #C6CFE1;
+	margin:10px auto 0;
+	width:218px;  
+	text-align:center;  
+}
+#header h1{
+	text-align:center;
+	padding:10px;
+}
+#download{
+	margin:50px auto 0;
+	width:418px;
+	height:300px;
+} 
+#progress{
+	margin-bottom:5px;
+	text-align:center; 
+}
+/*-------------footer---------*/
+#pagefooter {
+border-top:1px solid #B8D4E8;
+background:#F8F8F8;
+margin:20px auto 0;
+position:relative;
+width:964px;
+}
+#pagefooter .pagefooter_topborder {
+padding:1px;
+}
+#pagefooter .copyright_and_location {
+float:left;
+width:310px;
+}
+#pagefooter .copyright {
+color:#777777;
+float:left;
+margin:0;
+padding:5px 8px 6px 11px;
+}
+#pagefooter .copyright {
+color:#777777;
+}
+#pagefooter #pagefooter_links {
+float:right;
+padding:5px 11px 6px 0;
+text-align:right;
+width:630px;
+}
+
+.error{    position:relative;     background:#FEE none repeat scroll 0 0; border:3px solid #911; color:#311; -moz-border-radius-bottomleft:5px; -moz-border-radius-bottomright:5px; -moz-border-radius-topleft:5px; -moz-border-radius-topright:5px; font-size:14px; margin:0 0 15px; padding:6px 8px; text-align:left}
+  
+.notice{  background:#EFE none repeat scroll 0 0; border:3px solid #191; color:#131;   -moz-border-radius-bottomleft:5px; -moz-border-radius-bottomright:5px; -moz-border-radius-topleft:5px; -moz-border-radius-topright:5px; font-size:14px; margin:0 0 15px; padding:6px 8px; text-align:left; position:relative}
+#msg_close{font-size:100%; position:absolute; right:20px; top:10px}
+ 
+#errorExplanation{background-color:#FCC; border:1px solid #C66; font-size:12px; margin:0 0 5px; padding:2px 8px; position:relative}
+ 
+#errorExplanation p{padding:2px}
+
+.clear{clear:both; font-size:0pt; line-height:0pt}
+ 
+.hidden_elem{display:none}
+.empty{visibility:hidden}
+
+/* ------------------------------fieldset styling --------------------------*/
+fieldset.no_border {
+	border:medium none;
+}
+fieldset{
+	margin: 1em 0; /*  space out the fieldsets a little*/
+	padding:10px 5px 5px 70px;
+	border : 1px solid #ccc;
+	background-color:#DFE4EE;
+  border:1px solid #C6CFE1;
+}      
+fieldset p{
+  margin:5px 0px ;	
+} 
+
+fieldset span {
+    color:#666666;
+    margin-top:8px;
+}  
+.new_post label{
+  width:80px;	
+}
+
+/* style for  labels */
+label {
+	cursor:pointer;
+	float:left;
+	font-size:13px;
+	margin-right:15px;
+	text-align:right;
+}
+
+/* style for required labels */
+label .required {
+	font-size: 0.83em;
+	color:#760000;
+}
+
+/* style error messages */
+label .feedback {
+	position: absolute;
+	margin-left: 11em;
+	left: 200px;
+  right: 0;
+	font-weight: bold;
+	color:#760000;
+	padding-left: 18px;
+	background: url(/images/error.png) no-repeat left top;
+}    
+ 
+label.checkbox{
+	color:#333333;
+	display:block;
+	font-weight:normal;
+	line-height:16px;
+  margin-left:9em;
+	float:none;
+} 
+p.loginbutton{
+margin-left:118px;
+}
+label.inside {
+position:absolute;
+visibility:hidden;
+}   
+a.edit_pencil{
+	background:transparent url(/images/editpencil.gif) no-repeat scroll 0 0;
+	display:block;
+	height:18px;
+	margin:3px;
+	position:absolute;
+	right:0;
+	top:0;
+	width:18px;
+}
+
+/* :KLUDGE: Explicitly set the width for IE6- */
+* html .feedback{
+  width: 10em;
+} 
+
+textarea{
+	overflow-x:hidden;
+}
+input.labelinside, textarea.labelinside {
+color:#999999;
+}
+.inputtext, .inputpassword {
+border:1px solid #BDC7D8;
+padding:3px;    
+width:200px;
+}   
+.inputsubmit, .inputbutton{
+  border:1px solid #CCCCCC;
+	color:#FFFFFF;
+	text-align:center;  
+	cursor:pointer;       
+	background-color:#4BA347;
+	font-size:1em;
+	padding:4px 8px;
+}   
+.inputcancel {
+background-color:#4BA347;
+border:1px solid #CCCCCC;
+color:#000000; 
+margin-left:15px;
+}
+
+/* style form elements on focus */
+input:focus, textarea:focus {
+  background-color: #FFF;
+  color: #333;
+  border-color:#0C0;
+}
+input.submit:hover, button:hover, input[type="submit"]:hover, input[type="file"] > input[type="button"]:hover {
+background:#11550E none repeat scroll 0 0;
+cursor:pointer;
+}
+input.submit, button, input[type="submit"], input[type="button"], input[type="file"] > input[type="button"] {
+	background-color:#4BA347;
+	border:1px solid #CCCCCC;
+	font-size:1.5em;
+	margin-left:40px;
+	padding:4px 18px;
+}

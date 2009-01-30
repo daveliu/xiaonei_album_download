@@ -1,0 +1,57 @@
+<style type="text/css">
+	form { display:inline; }
+	div.progress-container {
+	  width: 140px;
+	  float: left; 
+	}
+	
+	div.progress-container > div {
+	  width: 102px;
+	  padding: 1px;
+	  margin-top: 2px;
+	  float: left; 
+	  background: url(/images/progress_bar_bg.gif) no-repeat 0 0;
+	}
+	
+	div.progress-container > div > div {
+	  height: 9px;
+	  background: url(/images/progress_bar.gif) no-repeat 0 0;
+	}
+</style>
+
+<table id="jobs_list" cellspacing="1">
+	<thead>
+		<tr>
+			<th>Progress</th>
+		</tr>
+	</thead>
+	<tbody id="jobs">
+	 <tr>
+		<td><%= @job.state %></td>
+		<td>
+			<% if @job.progress -%>
+				<div class="progress-container">   
+					<div>       
+				    <div style="width: <%= @job.progress %>%"></div>
+					</div>
+					<%= @job.progress %>%
+				</div>
+			<% end -%>   
+		</td>
+		<td width="90">
+			<% if @job.downloadable? -%>
+				<% form_tag({:action => :export, :id => @job}) do -%>
+					<%= submit_tag 'Download' %>
+				<% end -%>
+			<% end -%>	 
+		</td>
+	 </tr>
+	</tbody>
+</table>
+<script type="text/javascript">
+//<![CDATA[
+new Ajax.PeriodicalUpdater('jobs', '<%= url_for :action => :update %>', {
+	  method: 'get', frequency: 20, decay: 2, maxFrequency: 180, asynchronous:true, evalScripts:true
+	});
+//]]>
+</script>

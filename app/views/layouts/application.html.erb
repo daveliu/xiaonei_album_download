@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>  
+	  <meta http-equiv="Content-type" content="application/xhtml+xml; charset=utf-8" />    
+    <title>下载</title>
+    <%= stylesheet_link_tag  'application' %>    
+		<%= javascript_include_tag 'prototype' %>
+  </head>
+  <body>
+
+	<div id="main">    
+    <%= yield %>
+  </div> 
+
+   
+
+	<div id="pagefooter">
+		<div class="pagefooter_topborder clearfix">
+			<div class="copyright_and_location clearfix">
+				<div class="copyright">  
+					<span title="10.22.26.104">2009</span>
+				</div>
+			</div>
+			<div id="pagefooter_links">    
+				<%= mail_to "liuwenju26@gmail.com" %>
+			</div>  
+		</div>  
+	</div> 
+	
+	<script type="text/javascript">
+	//<![CDATA[           
+	var updater;
+	function period(url){
+	    updater = new Ajax.PeriodicalUpdater('progress', url, {
+		  method: 'put', frequency: 10, decay: 1, maxFrequency: 180, asynchronous:true, evalScripts:true
+		});
+	}	
+	//]]>
+	</script>
+      
+  </body>
+</html>

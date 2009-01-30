@@ -1,0 +1,80 @@
+# Logfile created on Thu Jan 29 14:40:00 +0800 2009 by /
+*** below you find the most recent exception thrown, this will be likely (but not certainly) the exception that made the application exit abnormally ***
+#<MissingSourceFile: no such file to load -- encoding/character/utf-8>
+*** below you find all exception objects found in memory, some of them may have been thrown in your application, others may just be in memory because they are standard exceptions ***
+#<NoMemoryError: failed to allocate memory>
+#<SystemStackError: stack level too deep>
+#<fatal: exception reentered>
+#<MissingSourceFile: no such file to load -- mechanize>
+#<SQLite3::SQLException: no such table: delayed_jobs>
+#<ActiveRecord::StatementInvalid: SQLite3::SQLException: no such table: delayed_jobs: UPDATE "delayed_jobs" SET locked_by = null, locked_at = null WHERE (locked_by = 'host:dave-lius-macbook-2.local pid:59614') >
+#<SQLite3::SQLException: no such table: delayed_jobs>
+#<ActiveRecord::StatementInvalid: SQLite3::SQLException: no such table: delayed_jobs: SELECT * FROM "delayed_jobs" WHERE ((run_at <= '2009-01-29 06:40:00' AND (locked_at IS NULL OR locked_at < '2009-01-29 02:40:00') OR (locked_by = 'host:dave-lius-macbook-2.local pid:59614')) AND failed_at IS NULL)  ORDER BY priority DESC, run_at ASC LIMIT 5>
+#<MissingSourceFile: no such file to load -- sqlite3>
+#<MissingSourceFile: no such file to load -- zip/zip>
+#<MissingSourceFile: no such file to load -- encoding/character/utf-8>
+Thu Jan 29 16:05:54 +0800 2009
+SIGTERM
+["/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:46:in `sleep'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:46:in `watch'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:45:in `each'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:45:in `watch'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:44:in `loop'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:44:in `watch'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:84:in `start_with_pidfile'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:64:in `fork'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:64:in `start_with_pidfile'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:111:in `start'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/application_group.rb:113:in `create_monitor'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/application.rb:244:in `start'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/controller.rb:69:in `run'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons.rb:139:in `run'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/cmdline.rb:105:in `call'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/cmdline.rb:105:in `catch_exceptions'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons.rb:138:in `run'", "./script/../lib/daemons/job_ctl:25"]
+Thu Jan 29 16:16:02 +0800 2009
+SIGTERM
+["/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:57:in `sleep'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:57:in `watch'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:44:in `loop'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:44:in `watch'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:84:in `start_with_pidfile'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:64:in `fork'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:64:in `start_with_pidfile'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:111:in `start'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/application_group.rb:113:in `create_monitor'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/application.rb:244:in `start'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/controller.rb:69:in `run'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons.rb:139:in `run'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/cmdline.rb:105:in `call'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/cmdline.rb:105:in `catch_exceptions'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons.rb:138:in `run'", "lib/daemons/job_ctl:25"]
+Thu Jan 29 16:25:22 +0800 2009
+SIGTERM
+["/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:57:in `sleep'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:57:in `watch'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:44:in `loop'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:44:in `watch'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:84:in `start_with_pidfile'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:64:in `fork'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:64:in `start_with_pidfile'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:111:in `start'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/application_group.rb:113:in `create_monitor'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/application.rb:244:in `start'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/controller.rb:69:in `run'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons.rb:139:in `run'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/cmdline.rb:105:in `call'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/cmdline.rb:105:in `catch_exceptions'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons.rb:138:in `run'", "lib/daemons/job_ctl:25"]
+*** below you find the most recent exception thrown, this will be likely (but not certainly) the exception that made the application exit abnormally ***
+#<ActiveRecord::StatementInvalid: Mysql::Error: Table 'xiaonei_development.delayed_jobs' doesn't exist: UPDATE `delayed_jobs` SET locked_by = null, locked_at = null WHERE (locked_by = 'host:dave-lius-macbook-2.local pid:67152') >
+*** below you find all exception objects found in memory, some of them may have been thrown in your application, others may just be in memory because they are standard exceptions ***
+#<NoMemoryError: failed to allocate memory>
+#<SystemStackError: stack level too deep>
+#<fatal: exception reentered>
+*** below you find the most recent exception thrown, this will be likely (but not certainly) the exception that made the application exit abnormally ***
+#<ActiveRecord::StatementInvalid: Mysql::Error: Table 'xiaonei_development.delayed_jobs' doesn't exist: SELECT * FROM `delayed_jobs` WHERE ((run_at <= '2009-01-29 08:48:22' AND (locked_at IS NULL OR locked_at < '2009-01-29 04:48:22') OR (locked_by = 'host:dave-lius-macbook-2.local pid:66211')) AND failed_at IS NULL)  ORDER BY priority DESC, run_at ASC LIMIT 5>
+*** below you find all exception objects found in memory, some of them may have been thrown in your application, others may just be in memory because they are standard exceptions ***
+#<NoMemoryError: failed to allocate memory>
+#<SystemStackError: stack level too deep>
+#<fatal: exception reentered>
+#<Mysql::Error: Table 'xiaonei_development.delayed_jobs' doesn't exist>
+#<ActiveRecord::StatementInvalid: Mysql::Error: Table 'xiaonei_development.delayed_jobs' doesn't exist: UPDATE `delayed_jobs` SET locked_by = null, locked_at = null WHERE (locked_by = 'host:dave-lius-macbook-2.local pid:67152') >
+#<Errno::ENOENT: No such file or directory - /Users/daveliu/projects/download_xiaonei/log/job.rb.pid>
+#<Mysql::Error: Table 'xiaonei_development.delayed_jobs' doesn't exist>
+#<ActiveRecord::StatementInvalid: Mysql::Error: Table 'xiaonei_development.delayed_jobs' doesn't exist: UPDATE `delayed_jobs` SET locked_by = null, locked_at = null WHERE (locked_by = 'host:dave-lius-macbook-2.local pid:66211') >
+#<Mysql::Error: Table 'xiaonei_development.delayed_jobs' doesn't exist>
+#<ActiveRecord::StatementInvalid: Mysql::Error: Table 'xiaonei_development.delayed_jobs' doesn't exist: SELECT * FROM `delayed_jobs` WHERE ((run_at <= '2009-01-29 08:48:22' AND (locked_at IS NULL OR locked_at < '2009-01-29 04:48:22') OR (locked_by = 'host:dave-lius-macbook-2.local pid:66211')) AND failed_at IS NULL)  ORDER BY priority DESC, run_at ASC LIMIT 5>
+*** below you find the most recent exception thrown, this will be likely (but not certainly) the exception that made the application exit abnormally ***
+#<MissingSourceFile: no such file to load -- mysql>
+*** below you find all exception objects found in memory, some of them may have been thrown in your application, others may just be in memory because they are standard exceptions ***
+#<NoMemoryError: failed to allocate memory>
+#<SystemStackError: stack level too deep>
+#<fatal: exception reentered>
+#<Errno::ENOENT: No such file or directory - /Users/daveliu/projects/download_xiaonei/log/job.rb.pid>
+#<Mysql::Error: Table 'xiaonei_development.delayed_jobs' doesn't exist>
+#<ActiveRecord::StatementInvalid: Mysql::Error: Table 'xiaonei_development.delayed_jobs' doesn't exist: UPDATE `delayed_jobs` SET locked_by = null, locked_at = null WHERE (locked_by = 'host:dave-lius-macbook-2.local pid:67789') >
+#<Mysql::Error: Table 'xiaonei_development.delayed_jobs' doesn't exist>
+#<ActiveRecord::StatementInvalid: Mysql::Error: Table 'xiaonei_development.delayed_jobs' doesn't exist: SELECT * FROM `delayed_jobs` WHERE ((run_at <= '2009-01-29 08:48:26' AND (locked_at IS NULL OR locked_at < '2009-01-29 04:48:26') OR (locked_by = 'host:dave-lius-macbook-2.local pid:67789')) AND failed_at IS NULL)  ORDER BY priority DESC, run_at ASC LIMIT 5>
+#<MissingSourceFile: no such file to load -- mysql>
+Thu Jan 29 16:49:01 +0800 2009
+SIGTERM
+["/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:57:in `sleep'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:57:in `watch'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:44:in `loop'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:44:in `watch'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:84:in `start_with_pidfile'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:64:in `fork'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:64:in `start_with_pidfile'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:111:in `start'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/application_group.rb:113:in `create_monitor'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/application.rb:244:in `start'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/controller.rb:69:in `run'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons.rb:139:in `run'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/cmdline.rb:105:in `call'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/cmdline.rb:105:in `catch_exceptions'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons.rb:138:in `run'", "lib/daemons/job_ctl:25"]
+Thu Jan 29 17:44:39 +0800 2009
+SIGTERM
+["/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:57:in `sleep'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:57:in `watch'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:44:in `loop'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:44:in `watch'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:84:in `start_with_pidfile'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:64:in `fork'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:64:in `start_with_pidfile'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/monitor.rb:111:in `start'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/application_group.rb:113:in `create_monitor'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/application.rb:244:in `start'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/controller.rb:69:in `run'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons.rb:139:in `run'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/cmdline.rb:105:in `call'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons/cmdline.rb:105:in `catch_exceptions'", "/Library/Ruby/Gems/1.8/gems/daemons-1.0.10/lib/daemons.rb:138:in `run'", "lib/daemons/job_ctl:25"]
+*** below you find the most recent exception thrown, this will be likely (but not certainly) the exception that made the application exit abnormally ***
+#<Mysql::Error: Server shutdown in progress>
+*** below you find all exception objects found in memory, some of them may have been thrown in your application, others may just be in memory because they are standard exceptions ***
+#<NoMemoryError: failed to allocate memory>
+#<SystemStackError: stack level too deep>
+#<fatal: exception reentered>
+#<Errno::ENOENT: No such file or directory - /Users/daveliu/projects/download_xiaonei/log/job.rb.pid>
+#<ActiveRecord::StatementInvalid: Mysql::Error: Server shutdown in progress: UPDATE `delayed_jobs` SET locked_by = null, locked_at = null WHERE (locked_by = 'host:dave-lius-macbook-2.local pid:69669') >
+#<Mysql::Error: Server shutdown in progress>
+*** below you find the most recent exception thrown, this will be likely (but not certainly) the exception that made the application exit abnormally ***
+#<MissingSourceFile: no such file to load -- mysql>
+*** below you find all exception objects found in memory, some of them may have been thrown in your application, others may just be in memory because they are standard exceptions ***
+#<NoMemoryError: failed to allocate memory>
+#<SystemStackError: stack level too deep>
+#<fatal: exception reentered>
+#<Errno::ENOENT: No such file or directory - /Users/daveliu/projects/download_xiaonei/log/job.rb.pid>
+#<Mysql::Error: MySQL server has gone away>
+#<ActiveRecord::StatementInvalid: Mysql::Error: MySQL server has gone away: UPDATE `delayed_jobs` SET locked_by = null, locked_at = null WHERE (locked_by = 'host:dave-lius-macbook-2.local pid:69709') >
+#<MissingSourceFile: no such file to load -- mysql>

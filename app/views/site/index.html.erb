@@ -1,0 +1,22 @@
+<div id="download">
+	<%= error_messages_for :photo %>
+	<% form_for @photo do |f| -%>
+	  <fieldset>
+	  	<p><label for="email">邮箱</label>
+			<%= f.text_field :email, :class => 'inputtext' %><br />
+			</p>   
+
+			<p><label for="password">密码</label>
+			 <%= f.password_field :password, :class => 'inputtext' %><br />
+			</p>   
+		
+			<p><label for="url">链接</label>
+			 <%= f.text_field :url, :class => 'inputtext' %><br />
+			</p>  
+		
+			<p><label class="empty">empty</label>
+			 <%= submit_tag "提交", :style => "" %><br />
+			</p>
+	  </fieldset>
+	<% end -%>
+</div>	 

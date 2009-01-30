@@ -1,0 +1,14 @@
+<% if @photo.finish? %>
+  <div id="jobs">
+	  下载完成，<%= link_to "点击下载", photo_path(@photo) %>
+  </div>        
+   <script type="text/javascript">
+	//<![CDATA[  
+    updater.stop()
+	//]]>
+	</script>
+<% else %>
+	<div id="jobs">
+		正在下载第<%= @size || 1 %>张
+	</div>
+<% end -%>	  
