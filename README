@@ -4,4 +4,6 @@ use gem:
 require 'mechanize'
 require 'hpricot'  
 require 'zip/zip'
-require 'zip/zipfilesystem'  
+require 'zip/zipfilesystem' 
+
+use daemons and delayed_job for the background job 

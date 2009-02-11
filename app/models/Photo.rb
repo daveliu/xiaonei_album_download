@@ -1,7 +1,5 @@
-require 'mechanize'
-require 'hpricot'  
-require 'zip/zip'
-require 'zip/zipfilesystem'
+require "zip/zip"
+require "zip/zipfilesystem"
       
 class Photo < ActiveRecord::Base 
   extend ActiveSupport::Memoizable 
