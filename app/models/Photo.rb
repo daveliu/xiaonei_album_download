@@ -60,7 +60,7 @@ class Photo < ActiveRecord::Base
 
      # set read permissions on the file
      File.chmod(0644, bundle_filename)   
-   #  system("rm #{RAILS_ROOT}/public/uploads/*.png")
+     system("rm #{RAILS_ROOT}/public/uploads/*.png")
      photo.update_attribute(:finish, true)
   end
   

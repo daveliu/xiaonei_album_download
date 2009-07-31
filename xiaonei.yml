@@ -1,0 +1,184 @@
+--- 
+xiaonei.com: 
+  xn_app_histo_227601614: !ruby/object:WWW::Mechanize::Cookie 
+    comment: 
+    comment_url: 
+    discard: 
+    domain: xiaonei.com
+    expires: 
+    max_age: 
+    name: xn_app_histo_227601614
+    path: /
+    port: 
+    secure: false
+    value: 12987-20-7-9999-12750-13450-4-17940-6-2-3-8
+    version: 0
+  _de: !ruby/object:WWW::Mechanize::Cookie 
+    comment: 
+    comment_url: 
+    discard: 
+    domain: xiaonei.com
+    expires: Mon, 26 Jul 2010 08:58:03 GMT
+    max_age: 
+    name: _de
+    path: /
+    port: 
+    secure: false
+    value: E2FF706345C8FEB13F606196879414381B41FD2BADCB526528A143C75ABD01F0
+    version: 0
+  _r01_: !ruby/object:WWW::Mechanize::Cookie 
+    comment: 
+    comment_url: 
+    discard: 
+    domain: xiaonei.com
+    expires: Mon, 26 Jul 2010 08:57:47 GMT
+    max_age: 
+    name: _r01_
+    path: /
+    port: 
+    secure: false
+    value: "1"
+    version: 0
+  depovince: !ruby/object:WWW::Mechanize::Cookie 
+    comment: 
+    comment_url: 
+    discard: 
+    domain: xiaonei.com
+    expires: Mon, 03 Aug 2009 08:57:47 GMT
+    max_age: 
+    name: depovince
+    path: /
+    port: 
+    secure: false
+    value: BJ
+    version: 0
+  kl: !ruby/object:WWW::Mechanize::Cookie 
+    comment: 
+    comment_url: 
+    discard: 
+    domain: xiaonei.com
+    expires: 
+    max_age: 
+    name: kl
+    path: /
+    port: 
+    secure: false
+    value: dde65dd4842b13f94d524972ce938ff2_227601614
+    version: 0
+  XNESSESSIONID: !ruby/object:WWW::Mechanize::Cookie 
+    comment: 
+    comment_url: 
+    discard: 
+    domain: xiaonei.com
+    expires: 
+    max_age: 
+    name: XNESSESSIONID
+    path: /
+    port: 
+    secure: false
+    value: 713a06be7a29
+    version: 0
+  WebOnLineNotice_227601614: !ruby/object:WWW::Mechanize::Cookie 
+    comment: 
+    comment_url: 
+    discard: 
+    domain: xiaonei.com
+    expires: Fri, 31 Jul 2009 09:03:03 GMT
+    max_age: 
+    name: WebOnLineNotice_227601614
+    path: /
+    port: 
+    secure: false
+    value: "1"
+    version: 0
+  univyear: !ruby/object:WWW::Mechanize::Cookie 
+    comment: 
+    comment_url: 
+    discard: 
+    domain: xiaonei.com
+    expires: 
+    max_age: 
+    name: univyear
+    path: /
+    port: 
+    secure: false
+    value: "2004"
+    version: 0
+  gender: !ruby/object:WWW::Mechanize::Cookie 
+    comment: 
+    comment_url: 
+    discard: 
+    domain: xiaonei.com
+    expires: 
+    max_age: 
+    name: gender
+    path: /
+    port: 
+    secure: false
+    value: "1"
+    version: 0
+  univid: !ruby/object:WWW::Mechanize::Cookie 
+    comment: 
+    comment_url: 
+    discard: 
+    domain: xiaonei.com
+    expires: 
+    max_age: 
+    name: univid
+    path: /
+    port: 
+    secure: false
+    value: "1011"
+    version: 0
+  userid: !ruby/object:WWW::Mechanize::Cookie 
+    comment: 
+    comment_url: 
+    discard: 
+    domain: xiaonei.com
+    expires: 
+    max_age: 
+    name: userid
+    path: /
+    port: 
+    secure: false
+    value: "227601614"
+    version: 0
+  jebecookies: !ruby/object:WWW::Mechanize::Cookie 
+    comment: 
+    comment_url: 
+    discard: 
+    domain: xiaonei.com
+    expires: 
+    max_age: 
+    name: jebecookies
+    path: /
+    port: 
+    secure: false
+    value: 227601614|1|1987-6-26|20|60001001|1011_
+    version: 0
+  hostid: !ruby/object:WWW::Mechanize::Cookie 
+    comment: 
+    comment_url: 
+    discard: 
+    domain: xiaonei.com
+    expires: 
+    max_age: 
+    name: hostid
+    path: /
+    port: 
+    secure: false
+    value: "227601614"
+    version: 0
+  societyguester: !ruby/object:WWW::Mechanize::Cookie 
+    comment: 
+    comment_url: 
+    discard: 
+    domain: xiaonei.com
+    expires: 
+    max_age: 
+    name: societyguester
+    path: /
+    port: 
+    secure: false
+    value: e2d3a8d113b5d192aae5a94014eed7014
+    version: 0
