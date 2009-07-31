@@ -6,7 +6,8 @@ class PhotosController < ApplicationController
   def create    
     @photo = Photo.new params[:photo]
     if @photo.save    
-      Photo.send_later(:bundle, @photo)  
+      #Photo.send_later(:bundle, @photo)  
+      Photo.bundle(@photo)
       render :update do |page|         
         page.replace_html  "error", "<div id='error'></div>"
         page.replace_html  "progress", :partial => "jobs"

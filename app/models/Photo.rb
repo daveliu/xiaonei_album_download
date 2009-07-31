@@ -3,7 +3,7 @@ require "zip/zipfilesystem"
       
 class Photo < ActiveRecord::Base 
   extend ActiveSupport::Memoizable 
-  validates_presence_of :email, :password, :album_url
+#  validates_presence_of :email, :password, :album_url
   
   attr_reader :agent                              
   
@@ -12,15 +12,23 @@ class Photo < ActiveRecord::Base
   def agent
     agent = WWW::Mechanize.new
     agent.user_agent_alias = 'Windows IE 7'      
-    params = {:email => email, :password => password}
-    agent.post(LOGIN_PATH, params)
+    page = agent.get("http://www.xiaonei.com/SysHome.do")
+    my = page.form_with(:action => "http://login.xiaonei.com/Login.do") do |f|
+      f.email = "luoye6401531@yahoo.com.cn"
+      f.password = "13920034115"
+    end.submit  
+#    agent.cookie_jar.save_as("xiaonei.yml")
+   agent.cookie_jar.load("xiaonei.yml")
+#   params = {:login => {:email => email, :password => password}}
+    # params = {:email => "luoye6401541@yahoo.com.cn", :password => "13901132265"}
+    # agent.post(LOGIN_PATH, params)   
     agent
   end  
   memoize :agent 
   
-  def validate
-    errors.add(:base, "邮箱或密码有错误") if agent.page.uri.to_s == LOGIN_PATH
-  end
+  # def validate
+  #   errors.add(:base, "邮箱或密码有错误") if agent.page.uri.to_s == LOGIN_PATH
+  # end   
   
   def photos_ary
     album_page = agent.get(album_url)  
@@ -28,7 +36,7 @@ class Photo < ActiveRecord::Base
       href = img.attributes['href']
       photo_page = agent.get(href)
       src = photo_page.root.search("img#photo").first.attributes['src']
-      ary << src
+      ary << src       
     end
   end  
   
@@ -52,7 +60,7 @@ class Photo < ActiveRecord::Base
 
      # set read permissions on the file
      File.chmod(0644, bundle_filename)   
-     system("rm #{RAILS_ROOT}/public/uploads/*.png")
+   #  system("rm #{RAILS_ROOT}/public/uploads/*.png")
      photo.update_attribute(:finish, true)
   end
   

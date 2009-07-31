@@ -24,7 +24,7 @@ Rails::Initializer.run do |config|
   # They can then be installed with "rake gems:install" on new installations.
   # You have to specify the :lib option for libraries, where the Gem name (sqlite3-ruby) differs from the file itself (sqlite3)
   # config.gem "bj"
-  config.gem "hpricot"
+ # config.gem "hpricot"
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"    
   config.gem "mechanize"        
@@ -78,4 +78,4 @@ Rails::Initializer.run do |config|
 end
 I18n.default_locale = 'zh-CN'
 I18n.locale         = 'zh-CN'
-Column = {:email => "邮箱", "password" => "密码", "album_url" => "链接"}
+Column = {"email" => "邮箱", "password" => "密码", "album_url" => "链接"}
